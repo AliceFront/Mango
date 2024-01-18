@@ -1,4 +1,4 @@
-# mango Configuration
+# mango Configuration hello 
 
 The mango Configuration describes the operational details for a mango Node
 (Validator or Full node) and provides the mango Clients information on how to
