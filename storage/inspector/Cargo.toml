@@ -1,0 +1,22 @@
+[package]
+name = "mango-storage-inspector"
+version = "0.1.0"
+
+
+license = "Apache-2.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+structopt ={ workspace = true }
+tempfile = { workspace = true }
+
+mango-framework-releases = { workspace = true }
+diemdb = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-types = { workspace = true }
+mango-logger ={ workspace = true }
+
+storage-interface = { workspace = true }

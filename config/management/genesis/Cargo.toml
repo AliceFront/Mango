@@ -1,0 +1,33 @@
+[package]
+name = "mango-genesis-tool"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+rand = { workspace = true }
+serde ={ workspace = true }
+structopt ={ workspace = true }
+thiserror ={ workspace = true }
+toml ={ workspace = true }
+
+consensus-types  ={ workspace = true }
+executor ={ workspace = true }
+generate-key ={ workspace = true }
+bcs = { workspace = true }
+mango-config ={ workspace = true }
+mango-crypto = { workspace = true }
+mango-framework-releases = { workspace = true }
+mango-global-constants= { workspace = true }
+mango-management = { workspace = true }
+mango-network-address-encryption = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-types = { workspace = true }
+
+mango-temppath ={ workspace = true }
+mango-vm = { workspace = true }
+diemdb ={ workspace = true }
+storage-interface ={ workspace = true }
+vm-genesis = { workspace = true }
+
+

@@ -1,0 +1,28 @@
+[package]
+name = "consensus-types"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+itertools ={ workspace = true }
+mirai-annotations = { workspace = true }
+
+serde = { workspace = true }
+
+executor-types = { workspace = true }
+bcs = { workspace = true }
+mango-crypto = { workspace = true }
+mango-crypto-derive = { workspace = true }
+mango-infallible = { workspace = true }
+mango-types = { workspace = true }
+
+short-hex-str = { workspace = true }
+
+
+[dev-dependencies]
+proptest  = { workspace = true }
+serde_json ={ workspace = true }
+mango-types = { workspace = true }
+
+

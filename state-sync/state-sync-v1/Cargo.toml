@@ -1,0 +1,60 @@
+[package]
+name = "state-sync-v1"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+bcs = { workspace = true }
+fail = { workspace = true }
+futures ={ workspace = true }
+itertools = { workspace = true }
+once_cell  = { workspace = true }
+proptest  = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tokio-stream = { workspace = true }
+
+consensus-notifications = { workspace = true }
+channel = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-infallible = { workspace = true }
+mango-logger ={ workspace = true }
+mango-mempool = { workspace = true }
+mango-metrics = { workspace = true }
+mango-proptest-helpers = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+diemdb = { workspace = true }
+executor = { workspace = true }
+executor-test-helpers = { workspace = true }
+executor-types = { workspace = true }
+memsocket = { workspace = true }
+mempool-notifications = { workspace = true }
+netcore = { workspace = true }
+network = { workspace = true }
+storage-interface = { workspace = true }
+subscription-service = { workspace = true }
+vm-genesis = { workspace = true }
+
+[dev-dependencies]
+bytes = { workspace = true }
+proptest  = { workspace = true }
+
+channel = { workspace = true }
+mango-framework-releases = { workspace = true }
+mango-crypto = { workspace = true }
+mango-genesis-tool = { workspace = true }
+diemdb = { workspace = true }
+executor-test-helpers = { workspace = true }
+
+network-builder = { workspace = true }
+storage-service = { workspace = true }
+mango-transaction-builder ={ workspace = true }
+mango-time-service = { workspace = true }
+vm-genesis = { workspace = true }
+

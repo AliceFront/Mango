@@ -1,0 +1,2 @@
+sandbox publish src/modules --mode mango
+sandbox run src/scripts/set.move --mode mango --dry-run

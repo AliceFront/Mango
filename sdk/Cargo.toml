@@ -1,0 +1,19 @@
+[package]
+name = "mango-sdk"
+version = "0.0.2"
+edition = "2018"
+
+[dependencies]
+bcs = { workspace = true }
+rand_core = { workspace = true }
+serde = { workspace = true }
+
+mango-crypto = { workspace = true }
+mango-types = { workspace = true }
+move-core-types = { workspace = true }
+mango-transaction-builder = { workspace = true }
+
+# Optional Dependencies
+mango-client = { workspace = true }
+
+[dev-dependencies]

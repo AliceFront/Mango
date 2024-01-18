@@ -1,0 +1,22 @@
+[package]
+name = "mango-e2e-tests-replay"
+version = "0.1.0"
+edition = "2018"
+
+
+[dependencies]
+anyhow ={ workspace = true }
+bcs = { workspace = true }
+structopt ={ workspace = true }
+walkdir = { workspace = true }
+
+
+bytecode-interpreter = { workspace = true }
+mango-types = { workspace = true }
+mango-framework = { workspace = true }
+mango-vm = { workspace = true }
+move-binary-format = { workspace = true }
+move-core-types = { workspace = true }
+move-model = { workspace = true }
+move-vm-runtime = { workspace = true }
+move-vm-types = { workspace = true }

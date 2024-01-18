@@ -1,0 +1,31 @@
+[package]
+name = "storage-service"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+tokio ={ workspace = true }
+futures ={ workspace = true }
+
+bcs = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+diemdb = { workspace = true }
+mango-logger ={ workspace = true }
+mango-metrics = { workspace = true }
+mango-secure-net = { workspace = true }
+storage-interface = { workspace = true }
+mango-types = { workspace = true }
+
+rand = { workspace = true }
+storage-client = { workspace = true }
+proptest  = { workspace = true }
+
+[dev-dependencies]
+itertools ={ workspace = true }
+diemdb = { workspace = true }
+mango-temppath ={ workspace = true }
+proptest  = { workspace = true }
+storage-client = { workspace = true }
+

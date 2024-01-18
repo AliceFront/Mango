@@ -1,0 +1,11 @@
+[package]
+name = "mango-state-view"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+mango-crypto = { workspace = true }
+mango-types = { workspace = true }
+
+

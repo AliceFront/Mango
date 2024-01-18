@@ -1,0 +1,29 @@
+[package]
+name = "vm-validator"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+fail = { workspace = true }
+mango-scratchpad = { workspace = true }
+mango-state-view = { workspace = true }
+storage-interface = { workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+[dev-dependencies]
+rand = { workspace = true }
+
+executor = { workspace = true }
+executor-test-helpers = { workspace = true }
+mango-crypto = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+diemdb = { workspace = true }
+storage-service = { workspace = true }
+mango-transaction-builder = { workspace = true }
+vm-genesis = { workspace = true }
+move-core-types = { workspace = true }
+

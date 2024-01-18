@@ -1,0 +1,32 @@
+[package]
+name = "executor-benchmark"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+itertools = { workspace = true }
+rand = { workspace = true }
+rayon = { workspace = true }
+structopt ={ workspace = true }
+criterion  = { workspace = true }
+
+executor = { workspace = true }
+executor-types = { workspace = true }
+diemdb = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-genesis-tool = { workspace = true }
+mango-infallible = { workspace = true }
+mango-logger ={ workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+storage-client = { workspace = true }
+storage-interface = { workspace = true }
+storage-service = { workspace = true }
+mango-transaction-builder ={ workspace = true }
+
+
+[[bench]]
+name = "executor_benchmark"
+harness = false

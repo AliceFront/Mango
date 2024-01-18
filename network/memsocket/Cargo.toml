@@ -1,0 +1,12 @@
+[package]
+name = "memsocket"
+version = "0.1.0"
+publish = false
+
+[dependencies]
+futures = { workspace = true, features = [] }
+bytes = { workspace = true, features = [] }
+once_cell  = { workspace = true }
+mango-infallible = { workspace = true }
+
+

@@ -1,0 +1,16 @@
+[package]
+name = "mango-secure-net"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+once_cell  = { workspace = true }
+serde ={ workspace = true }
+thiserror ={ workspace = true }
+
+mango-logger ={ workspace = true }
+mango-secure-push-metrics = { workspace = true }
+
+
+[dev-dependencies]
+mango-config = { workspace = true }

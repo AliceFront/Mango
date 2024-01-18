@@ -1,0 +1,27 @@
+[package]
+name = "mango-config"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+get_if_addrs ={ workspace = true }
+log ={ workspace = true }
+mirai-annotations ={ workspace = true }
+rand = { workspace = true }
+serde ={ workspace = true }
+serde_yaml ={ workspace = true }
+thiserror ={ workspace = true }
+
+bcs = { workspace = true }
+mango-crypto = { workspace = true }
+mango-crypto-derive = { workspace = true }
+mango-global-constants ={ workspace = true }
+mango-logger ={ workspace = true }
+mango-network-address-encryption = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+
+short-hex-str ={ workspace = true }
+
+

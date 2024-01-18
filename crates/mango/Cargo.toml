@@ -1,0 +1,29 @@
+[package]
+name = "mango"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tokio ={ workspace = true }
+mango-client = { workspace = true }
+mango-types = { workspace = true }
+reqwest = { workspace = true }
+anyhow ={ workspace = true }
+mango-crypto = { workspace = true }
+generate-key = { workspace = true }
+mango-logger ={ workspace = true }
+hex ={ workspace = true }
+serde_yaml ={ workspace = true }
+structopt ={ workspace = true }
+swiss-knife = { workspace = true }
+rand = { workspace = true }
+home = { workspace = true }
+
+mango-transaction-builder ={ workspace = true }
+bcs = { workspace = true }
+rust_decimal = { workspace = true }

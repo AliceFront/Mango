@@ -1,0 +1,15 @@
+[package]
+name = "mango-bitvec"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+proptest-derive = { workspace = true }
+serde = { workspace = true }
+serde_bytes = { workspace = true }
+
+[dev-dependencies]
+bcs = { workspace = true }
+mango-proptest-helpers = { workspace = true }
+proptest-derive = { workspace = true }
+

@@ -1,0 +1,24 @@
+[package]
+name = "mango-scratchpad-benchmark"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+itertools = { workspace = true }
+rand = { workspace = true }
+rayon = { workspace = true }
+structopt ={ workspace = true }
+
+diemdb = { workspace = true }
+diemdb-benchmark = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-genesis-tool = { workspace = true }
+mango-infallible = { workspace = true }
+mango-logger ={ workspace = true }
+mango-types = { workspace = true }
+
+executor-types = { workspace = true }
+mango-scratchpad = { workspace = true }
+storage-interface = { workspace = true }

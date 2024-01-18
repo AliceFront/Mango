@@ -1,0 +1,20 @@
+[package]
+name = "socket-bench-server"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+futures ={ workspace = true }
+tokio ={ workspace = true }
+tokio-util = { workspace = true }
+
+mango-crypto = { workspace = true }
+mango-config = { workspace = true }
+mango-logger ={ workspace = true }
+mango-types = { workspace = true }
+
+memsocket = { workspace = true }
+netcore = { workspace = true }
+network = { workspace = true }
+network-builder = { workspace = true }
+rand = { workspace = true }

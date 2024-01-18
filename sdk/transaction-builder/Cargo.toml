@@ -1,0 +1,23 @@
+[package]
+name = "mango-transaction-builder"
+version = "0.0.2"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+bcs = { workspace = true }
+once_cell  = { workspace = true }
+serde = { workspace = true }
+
+move-core-types = { workspace = true }
+mango-types = { workspace = true }
+
+proptest  = { workspace = true }
+proptest-derive = { workspace = true }
+
+[dev-dependencies]
+proptest  = { workspace = true }
+proptest-derive  = { workspace = true }
+move-core-types = { workspace = true }
+
+

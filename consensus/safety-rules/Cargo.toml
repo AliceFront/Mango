@@ -1,0 +1,49 @@
+[package]
+name = "safety-rules"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+once_cell  = { workspace = true }
+rand = { workspace = true }
+
+rand_core = { workspace = true }
+
+crash-handler = { workspace = true }
+consensus-types = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-global-constants = { workspace = true }
+mango-infallible = { workspace = true }
+mango-logger ={ workspace = true }
+mango-proptest-helpers = { workspace = true }
+mango-secure-net = { workspace = true }
+mango-secure-push-metrics = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+mango-vault-client = { workspace = true }
+
+serde = { workspace = true }
+serde_json ={ workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+criterion  = { workspace = true }
+tempfile = { workspace = true }
+proptest  = { workspace = true }
+
+consensus-types = { workspace = true }
+mango-config = { workspace = true }
+mango-proptest-helpers = { workspace = true }
+mango-secure-storage = { workspace = true }
+
+[[bench]]
+name = "safety_rules"
+harness = false
+required-features = ["testing"]
+
+[[test]]
+name = "binary"
+required-features = ["testing"]
+

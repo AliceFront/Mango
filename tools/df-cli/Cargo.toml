@@ -1,0 +1,26 @@
+[package]
+name = "df-cli"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+bcs = { workspace = true }
+structopt ={ workspace = true }
+
+
+move-core-types = { workspace=true }
+move-cli = { workspace=true }
+mango-vm = { workspace = true }
+mango-framework-releases = { workspace=true }
+
+[dev-dependencies]
+datatest-stable = { workspace = true }
+
+[[bin]]
+name = "df-cli"
+path = "src/main.rs"
+
+[[test]]
+name = "cli_testsuite"
+harness = false

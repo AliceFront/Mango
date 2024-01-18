@@ -1,0 +1,10 @@
+[package]
+name = "mango-secure-push-metrics"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+ureq = { workspace = true }
+mango-logger ={ workspace = true }
+mango-metrics-core = { workspace = true }
+

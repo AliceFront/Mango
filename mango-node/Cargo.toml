@@ -1,0 +1,49 @@
+[package]
+name = "mango-node"
+version = "0.1.0"
+authors = ["mail@mango.com"]
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+bcs = { workspace = true }
+fail = { workspace = true }
+futures ={ workspace = true }
+hex ={ workspace = true }
+jemallocator = { workspace = true }
+rand = { workspace = true }
+structopt ={ workspace = true }
+tokio ={ workspace = true }
+tokio-stream = { workspace = true }
+
+backup-service = { workspace = true }
+consensus = { workspace = true }
+consensus-notifications = { workspace = true }
+crash-handler = { workspace = true }
+debug-interface = { workspace = true }
+executor = { workspace = true }
+executor-types = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-framework-releases = { workspace = true }
+mango-genesis-tool = { workspace = true }
+mango-json-rpc = { workspace = true }
+mango-logger ={ workspace = true }
+mango-mempool = { workspace = true }
+mango-metrics = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-time-service = { workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+diemdb = { workspace = true }
+mempool-notifications = { workspace = true }
+network-builder = { workspace = true }
+state-sync-v1 = { workspace = true }
+storage-client = { workspace = true }
+storage-interface = { workspace = true }
+storage-service = { workspace = true }
+subscription-service = { workspace = true }
+
+

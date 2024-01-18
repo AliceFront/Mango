@@ -1,0 +1,22 @@
+[package]
+name = "mango-network-address-encryption"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+base64 ={ workspace = true }
+serde ={ workspace = true }
+thiserror ={ workspace = true }
+bcs = { workspace = true }
+
+
+mango-global-constants = { workspace = true }
+mango-infallible = { workspace = true }
+mango-logger = { workspace = true }
+mango-secure-storage = { workspace = true }
+
+mango-types = { workspace = true }
+
+
+[dev-dependencies]
+rand = { workspace = true }

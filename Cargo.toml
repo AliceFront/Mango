@@ -1,0 +1,342 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "config",
+    "config/generate-key",
+    "config/global-constants",
+    "config/management",
+    "config/management/genesis",
+    "config/management/network-address-encryption",
+    "config/management/operational",
+    "config/seed-peer-generator",
+    "consensus",
+    "consensus/consensus-types",
+    "consensus/safety-rules",
+    "crates/bounded-executor",
+    "crates/channel",
+    "crates/crash-handler",
+    "crates/debug-interface",
+    "crates/mango",
+    "crates/vm-genesis",
+    "crates/mango-assets-proof",
+    "crates/mango-bitvec",
+    "crates/mango-client",
+    "crates/mango-crypto",
+    "crates/mango-crypto-derive",
+    "crates/mango-documentation-tool",
+    "crates/mango-faucet",
+    "crates/mango-infallible",
+    "crates/mango-json-rpc-client",
+    "crates/mango-log-derive",
+    "crates/mango-logger",
+    "crates/mango-metrics",
+    "crates/mango-metrics-core",
+    "crates/mango-proptest-helpers",
+    "crates/mango-rate-limiter",
+    "crates/mango-retrier",
+    "crates/mango-temppath",
+    "crates/mango-time-service",
+    "crates/fallible",
+    "crates/num-variants",
+    "crates/proxy",
+    "crates/short-hex-str",
+    "crates/subscription-service",
+    "crates/swiss-knife",
+    "mango-node",
+    "execution/db-bootstrapper",
+    "execution/execution-correctness",
+    "execution/executor",
+    "execution/executor-benchmark",
+    "execution/executor-test-helpers",
+    "execution/executor-types",
+    "json-rpc",
+    "json-rpc/integration-tests",
+    "json-rpc/types",
+    "json-rpc/types/proto",
+    "mango-framework",
+    "mango-tools/mango-events-fetcher",
+    "mango-tools/transaction-replay",
+    "mango-tools/writeset-transaction-generator",
+    "mempool",
+    "network",
+    "network/builder",
+    "network/discovery",
+    "network/memsocket",
+    "network/netcore",
+    "network/socket-bench-server",
+    "sdk",
+    "sdk/compatibility",
+    "sdk/offchain",
+    "sdk/transaction-builder",
+    "secure/key-manager",
+    "secure/net",
+    "secure/push-metrics",
+    "secure/storage",
+    "secure/storage/github",
+    "secure/storage/vault",
+
+    "state-sync/inter-component/consensus-notifications",
+    "state-sync/inter-component/event-notifications",
+    "state-sync/inter-component/mempool-notifications",
+    "state-sync/state-sync-v1",
+    "storage/accumulator",
+    "storage/backup/backup-cli",
+    "storage/backup/backup-service",
+    "storage/mango-scratchpad",
+    "storage/mango-scratchpad-benchmark",
+    "storage/diemdb",
+    "storage/diemdb-benchmark",
+    "storage/diemsum",
+    "storage/inspector",
+    "storage/jellyfish-merkle",
+    "storage/schemadb",
+    "storage/state-view",
+    "storage/storage-client",
+    "storage/storage-interface",
+    "storage/storage-service",
+    "types",
+    "vm-validator",
+]
+
+[workspace.dependencies]
+mango-crypto-derive = { path = "crates/mango-crypto-derive" }
+mango-crypto = { path = "crates/mango-crypto", features = ["fiat"] }
+mango-types = { path = "types" }
+mango-infallible = { path = "crates/mango-infallible" }
+mango-logger = { path = "crates/mango-logger" }
+mango-temppath = { path = "crates/mango-temppath" }
+mango-time-service = { path = "crates/mango-time-service" }
+mango-metrics = { path = "crates/mango-metrics" }
+mango-client = { path = "crates/mango-client" }
+mango-config = { path = "config" }
+mango-proptest-helpers = { path = "crates/mango-proptest-helpers" }
+mango-json-rpc-types = { path = "json-rpc/types" }
+mango-mempool = { path = "mempool" }
+mango-log-derive = { path = "crates/mango-log-derive" }
+mango-metrics-core = { path = "crates/mango-metrics-core" }
+mango-node = { path = "mango-node" }
+
+short-hex-str = { path = "crates/short-hex-str" }
+fallible = { path = "crates/fallible" }
+netcore = { path = "network/netcore" }
+network = { path = "network" }
+consensus-types = { path = "consensus/consensus-types" }
+executor = { path = "execution/executor" }
+generate-key = { path = "config/generate-key" }
+storage-interface = { path = "storage/storage-interface" }
+swiss-knife = { path = "crates/swiss-knife" }
+
+mango-global-constants = { path = "config/global-constants" }
+mango-secure-storage = { path = "secure/storage" }
+mango-network-address-encryption = { path = "config/management/network-address-encryption" }
+mango-framework = { path = "mango-framework" }
+mango-state-view = { path = "storage/state-view" }
+mango-validator-interface = { path = "mango-tools/mango-validator-interface" }
+mango-transaction-replay = { path = "mango-tools/transaction-replay" }
+diemdb = { path = "storage/diemdb" }
+mango-vm = { path = "mango-vm" }
+mango-framework-releases = { path = "mango-framework/releases" }
+mango-transaction-builder = { path = "sdk/transaction-builder" }
+mango-sdk = { path = "sdk" }
+
+channel = { path = "crates/channel" }
+executor-types = { path = "execution/executor-types" }
+crash-handler = { path = "crates/crash-handler" }
+mango-secure-net = { path = "secure/net" }
+mango-secure-push-metrics = { path = "secure/push-metrics" }
+mango-vault-client = { path = "secure/storage/vault" }
+consensus-notifications = { path = "state-sync/inter-component/consensus-notifications" }
+execution-correctness = { path = "execution/execution-correctness" }
+mempool-notifications = { path = "state-sync/inter-component/mempool-notifications" }
+safety-rules = { path = "consensus/safety-rules" }
+schemadb = { path = "storage/schemadb" }
+subscription-service = { path = "crates/subscription-service" }
+executor-test-helpers = { path = "execution/executor-test-helpers" }
+
+
+curve25519-dalek = { version = "0.1.0", package = "curve25519-dalek-fiat", default-features = false, features = [
+    "std",
+    "fiat_u64_backend"
+] }
+ed25519-dalek = { version = "0.1.0", package = "ed25519-dalek-fiat", default-features = false, features = [
+    "std",
+    "serde",
+    "fiat_u64_backend"
+] }
+
+
+anyhow = "1.0.38"
+structopt = "0.3.21"
+tempfile = "3.2.0"
+handlebars = "3.5.3"
+serde = "1.0.124"
+serde_json = "1.0.64"
+once_cell = "1.7.2"
+base64 = "0.13.0"
+futures = "0.3.12"
+tokio = { version = "1.18.2", features = ["full"] }
+tokio-util = { version = "0.7.2", features = ["compat"] }
+itertools = "0.10.0"
+toml = "0.5.8"
+rand = { version = "0.8.3", features = ["small_rng"]}
+bcs = "0.1.6"
+serde_yaml = "0.8.17"
+thiserror = "1.0.37"
+mirai-annotations = "1.10.1"
+log = "0.4.14"
+get_if_addrs = "0.5.3"
+hex = "0.4.3"
+backtrace = "0.3.56"
+bytes = "1.0.1"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+warp = "0.3.0"
+home = "0.5.4"
+async-trait = "0.1.53"
+clap = "4.0.26"
+rust_decimal = "1.10.3"
+proptest = "1.0.0"
+proptest-derive = "0.3.0"
+serde_bytes = "0.11.5"
+tokio-tungstenite = "0.14.0"
+ureq = { version = "1.5.4", features = ["json"] }
+ipnet = "2.3"
+tracing = "0.1.26"
+digest = "0.9.0"
+hkdf = "0.10.0"
+rand_core = "0.6.2"
+serde-name = "0.1.1"
+sha2 = "0.9.3"
+static_assertions = "1.1.0"
+tiny-keccak = { version = "2.0.2", features = ["sha3"] }
+x25519-dalek = { version = "2.0.0", features = ["static_secrets"] }
+aes-gcm = "0.8.0"
+bitvec = "0.19.4"
+byteorder = "1.4.3"
+ripemd160 = "0.9.1"
+criterion = "0.3.4"
+sha3 = "0.9.1"
+trybuild = "1.0.41"
+syn = "1.0.64"
+quote = "1.0.9"
+proc-macro2 = "1.0.24"
+regex = "1.5.5"
+chrono = "0.4.19"
+erased-serde = "0.3.13"
+hostname = "0.3.1"
+prometheus = "0.12.0"
+tracing-subscriber = "0.2.18"
+hyper = "0.14.20"
+rusty-fork = "0.3.0"
+assert_approx_eq = "1.1.0"
+pin-project = "1.0.5"
+enum_dispatch = "0.3.5"
+tokio-test = "0.4.1"
+fail = "0.4.0"
+num-derive = "0.3.3"
+num-traits = "0.2.14"
+termion = "1.5.6"
+include_dir = "0.6.0"
+rayon = "1.5.0"
+walkdir = "2.3.1"
+smallvec = "1.6.1"
+datatest-stable = "0.1.1"
+dir-diff = "0.3.2"
+read-write-set = { path = "mango-tools/mango-read-write-set" }
+nix = "0.20.0"
+rustyline = "8.0.0"
+gag = "0.1.10"
+mango-genesis-tool = { path = "config/management/genesis" }
+difference = "2.0.0"
+criterion-cpu-time = "0.1.0"
+mvhashmap = { path = "mango-vm/mvhashmap" }
+crossbeam-queue = "0.3.1"
+num_cpus = "1.13.0"
+storage-client = { path = "storage/storage-client" }
+mango-scratchpad = { path = "storage/mango-scratchpad" }
+storage-service = { path = "storage/storage-service" }
+heck = "0.3.2"
+textwrap = "0.13.4"
+which = "4.0.2"
+tokio-retry = "0.3.0"
+tokio-stream = "0.1.8"
+vm-validator = { path = "vm-validator" }
+jemallocator = "0.3.2"
+backup-service = { path = "storage/backup/backup-service" }
+consensus = { path = "consensus" }
+debug-interface = { path = "crates/debug-interface" }
+mango-json-rpc = { path = "json-rpc" }
+network-builder = { path = "network/builder" }
+state-sync-v1 = { path = "state-sync/state-sync-v1" }
+bounded-executor = { path = "crates/bounded-executor" }
+futures-util = "0.3.12"
+mango-rate-limiter = { path = "crates/mango-rate-limiter" }
+memsocket = { path = "network/memsocket" }
+num-variants = { path = "crates/num-variants" }
+maplit = "1.0.2"
+serial_test = "0.5.1"
+socket-bench-server = { path = "network/socket-bench-server" }
+url = "2.2.1"
+proxy = { path = "crates/proxy" }
+network-discovery = { path = "network/discovery" }
+bech32 = "0.8.0"
+serde_repr = "0.1"
+uuid = "0.8.2"
+rstest = "0.10.0"
+mango-github-client = { path = "secure/storage/github" }
+native-tls = "0.2.7"
+parking_lot = "0.11.1"
+mango-jellyfish-merkle = { path = "storage/jellyfish-merkle" }
+arc-swap = "1.2.0"
+diemdb-benchmark = { path = "storage/diemdb-benchmark" }
+accumulator = { path = "storage/accumulator" }
+indicatif = "0.15.0"
+flate2 = "1.0.20"
+rusoto_core = "0.46.0"
+rusoto_autoscaling = "0.46.0"
+rusoto_sts = "0.46.0"
+rusoto_s3 = "0.46.0"
+mango-retrier = { path = "crates/mango-retrier" }
+mango-management = { path = "config/management" }
+mango-operational-tool = { path = "config/management/operational" }
+seed-peer-generator = { path = "config/seed-peer-generator" }
+kube = "0.51.0"
+k8s-openapi = "0.11.0"
+pbkdf2 = "0.7.3"
+hmac = "0.10.1"
+sha-1 = "0.9.4"
+stats_alloc = "0.1.8"
+ctrlc = "3.1.8"
+libfuzzer-sys = "=0.3.2"
+hyper-proxy = "0.9.1"
+hyper-tls = "0.5.0"
+rusoto_eks = "0.46.0"
+rusoto_credential = "0.46.0"
+termcolor = "1.1.2"
+backup-cli = { path = "storage/backup/backup-cli" }
+mango-key-manager = { path = "secure/key-manager" }
+
+vm-genesis = { path = "crates/vm-genesis" }
+
+serde-reflection = { git = "https://github.com/mango/serde-reflection-mango.git", rev = "bb38a0fdb7b9c219cbbb646097e847587d059086" }
+serde-generate = { git = "https://github.com/mango/serde-reflection-mango.git", rev = "bb38a0fdb7b9c219cbbb646097e847587d059086" }
+
+
+move-core-types = { git = "https://github.com/move-language/move.git" }
+move-command-line-common = { git = "https://github.com/move-language/move.git" }
+move-stdlib = { git = "https://github.com/move-language/move.git" }
+move-vm-types = { git = "https://github.com/move-language/move.git" }
+move-binary-format = { git = "https://github.com/move-language/move.git" }
+move-vm-test-utils = { git = "https://github.com/move-language/move.git" }
+move-unit-test = { git = "https://github.com/move-language/move.git" }
+move-vm-runtime = { git = "https://github.com/move-language/move.git" }
+move-bytecode-verifier = { git = "https://github.com/move-language/move.git" }
+move-prover = { git = "https://github.com/move-language/move.git" }
+move-symbol-pool = { git = "https://github.com/move-language/move.git" }
+move-abigen = { git = "https://github.com/move-language/move.git" }
+move-docgen = { git = "https://github.com/move-language/move.git" }
+move-compiler = { git = "https://github.com/move-language/move.git" }
+move-bytecode-utils = { git = "https://github.com/move-language/move.git" }
+move-resource-viewer = { git = "https://github.com/move-language/move.git" }
+move-cli = { git = "https://github.com/move-language/move.git" }
+move-errmapgen = { git = "https://github.com/move-language/move.git" }

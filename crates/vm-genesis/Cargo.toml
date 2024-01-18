@@ -1,0 +1,37 @@
+[package]
+name = "vm-genesis"
+version = "0.1.0"
+edition = "2018"
+authors = ["mango Association <opensource@mango.com>"]
+description = "mango vm genesis"
+repository = "https://github.com/mango/mango"
+homepage = "https://mango.com"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+anyhow = {workspace=true}
+once_cell = {workspace=true}
+rand = {workspace=true}
+
+move-bytecode-verifier = {workspace=true}
+bcs = {workspace=true}
+mango-config = {workspace=true}
+mango-crypto = {workspace=true}
+mango-state-view = {workspace=true}
+mango-types = {workspace=true}
+
+move-bytecode-utils = {workspace=true}
+move-core-types = {workspace=true}
+move-vm-runtime = {workspace=true}
+move-vm-types = {workspace=true}
+mango-framework = {workspace=true}
+mango-framework-releases = {workspace=true}
+mango-transaction-builder = {workspace=true}
+move-binary-format = {workspace=true}
+mango-vm = {workspace=true}
+
+[dev-dependencies]
+proptest = {workspace=true}
+proptest-derive = {workspace=true}
+

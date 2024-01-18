@@ -1,0 +1,61 @@
+[package]
+name = "consensus"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+async-trait = { workspace = true }
+byteorder = { workspace = true }
+bytes = { workspace = true }
+fail = { workspace = true }
+futures ={ workspace = true }
+itertools = { workspace = true }
+mirai-annotations = { workspace = true }
+num-derive = { workspace = true }
+num-traits = { workspace = true }
+once_cell  = { workspace = true }
+proptest  = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json ={ workspace = true }
+termion = { workspace = true }
+thiserror ={ workspace = true }
+tokio ={ workspace = true }
+
+channel = { workspace = true }
+consensus-notifications = { workspace = true }
+consensus-types = { workspace = true }
+execution-correctness = { workspace = true }
+executor = { workspace = true }
+executor-types = { workspace = true }
+fallible = { workspace = true }
+bcs = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-logger ={ workspace = true }
+mango-mempool = { workspace = true }
+mango-metrics = { workspace = true }
+mango-infallible = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+mempool-notifications = { workspace = true }
+network = { workspace = true }
+safety-rules = { workspace = true }
+short-hex-str ={ workspace = true }
+schemadb = { workspace = true }
+storage-interface = { workspace = true }
+subscription-service = { workspace = true }
+
+[dev-dependencies]
+proptest  = { workspace = true }
+tempfile = { workspace = true }
+consensus-types = { workspace = true }
+executor-test-helpers = { workspace = true }
+vm-genesis = { workspace = true }
+vm-validator = { workspace = true }
+
+

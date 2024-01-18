@@ -1,0 +1,17 @@
+[package]
+name = "mango-validator-interface"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+mango-config = { workspace = true }
+mango-client = { workspace = true }
+mango-types = { workspace = true }
+diemdb = { workspace = true }
+
+storage-interface = { workspace = true }
+mango-scratchpad = { workspace = true }
+mango-state-view = { workspace = true }
+move-binary-format = { workspace = true }
+bcs = { workspace = true }

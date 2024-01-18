@@ -1,0 +1,36 @@
+[package]
+name = "execution-correctness"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+rand = { workspace = true }
+
+consensus-types = { workspace = true }
+executor = { workspace = true }
+executor-types = { workspace = true }
+bcs = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-global-constants = { workspace = true }
+mango-logger ={ workspace = true }
+mango-infallible = { workspace = true }
+mango-secure-net = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+serde = { workspace = true }
+storage-client = { workspace = true }
+thiserror ={ workspace = true }
+# this is actually a dev-dependency (see "Conditional compilation of tests" in coding_guidelines.md)
+executor-test-helpers = { workspace = true }
+
+[dev-dependencies]
+
+mango-config = { workspace = true }
+mango-genesis-tool = { workspace = true }
+mango-transaction-builder ={ workspace = true }
+

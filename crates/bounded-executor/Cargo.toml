@@ -1,0 +1,12 @@
+[package]
+name = "bounded-executor"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+futures ={ workspace = true }
+
+tokio = { workspace = true }
+
+[dev-dependencies]
+tokio ={ workspace = true }

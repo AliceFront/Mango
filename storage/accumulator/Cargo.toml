@@ -1,0 +1,17 @@
+[package]
+name = "accumulator"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+mango-crypto = { workspace = true }
+mirai-annotations ={ workspace = true }
+mango-types = { workspace = true }
+
+proptest  = { workspace = true }
+
+[dev-dependencies]
+rand = { workspace = true }
+mango-crypto = { workspace = true }
+

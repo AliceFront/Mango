@@ -1,0 +1,22 @@
+[package]
+name = "mempool-notifications"
+version = "0.1.0"
+
+description = "The notification interface between state sync and mempool"
+
+license = "Apache-2.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+async-trait = { workspace = true }
+futures ={ workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+
+mango-types = { workspace = true }
+
+
+[dev-dependencies]
+mango-crypto = { workspace = true }

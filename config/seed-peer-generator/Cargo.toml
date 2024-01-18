@@ -1,0 +1,25 @@
+[package]
+name = "seed-peer-generator"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+hex ={ workspace = true }
+rand = { workspace = true }
+serde_yaml ={ workspace = true }
+structopt ={ workspace = true }
+thiserror ={ workspace = true }
+
+bcs = { workspace = true }
+mango-config ={ workspace = true }
+mango-crypto = { workspace = true }
+mango-client ={ workspace = true }
+mango-logger ={ workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+
+
+[dev-dependencies]
+mango-types ={ workspace = true }
+

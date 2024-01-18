@@ -1,0 +1,17 @@
+[package]
+name = "sdk-compatibility"
+version = "0.0.0"
+
+
+license = "Apache-2.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+anyhow = { workspace = true }
+bcs = { workspace = true }
+rand = { workspace = true }
+mango-sdk = { workspace = true }
+once_cell  = { workspace = true }
+
+

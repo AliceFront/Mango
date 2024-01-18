@@ -1,0 +1,12 @@
+[package]
+name = "crash-handler"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+backtrace = { workspace = true }
+toml = { workspace = true }
+
+mango-logger ={ workspace = true }
+
+serde = { workspace = true }

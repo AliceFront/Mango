@@ -1,0 +1,12 @@
+[package]
+name = "mango-read-write-set"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+move-core-types = { workspace = true }
+read-write-set = { workspace = true }

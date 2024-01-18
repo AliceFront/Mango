@@ -1,0 +1,14 @@
+[package]
+name = "mango-rate-limiter"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+mango-infallible = { workspace = true }
+
+mango-logger ={ workspace = true }
+mango-metrics = { workspace = true }
+futures ={ workspace = true }
+pin-project = { workspace = true }
+tokio ={ workspace = true }
+tokio-util ={ workspace = true }

@@ -1,0 +1,14 @@
+[package]
+name = "mango-json-rpc-client"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+futures ={ workspace = true }
+rand = { workspace = true }
+
+mango-crypto = { workspace = true }
+mango-json-rpc-types   = { workspace = true }
+mango-types = { workspace = true }
+
+mango-client = { workspace = true }

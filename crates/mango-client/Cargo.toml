@@ -1,0 +1,36 @@
+[package]
+name = "mango-client"
+version = "0.0.2"
+edition = "2018"
+
+
+[dependencies]
+anyhow ={ workspace = true }
+bcs = { workspace = true }
+hex ={ workspace = true }
+serde = { workspace = true }
+serde_json ={ workspace = true }
+tracing  = { workspace = true }
+
+mango-crypto = { workspace = true }
+mango-json-rpc-types  = { workspace = true }
+move-core-types = { workspace = true }
+mango-types = { workspace = true }
+
+# Optional Dependencies
+futures  = { workspace = true }
+reqwest  = { workspace = true }
+tokio  = { workspace = true }
+tokio-tungstenite  = { workspace = true }
+ureq  = { workspace = true }
+ipnet  = { workspace = true }
+
+# Needed to fsync a directory on Windows apparently...
+[target.'cfg(windows)'.dependencies]
+winapi = "0.3.9"
+
+[dev-dependencies]
+
+mango-types = { workspace = true }
+proptest  = { workspace = true }
+tempfile = { workspace = true }

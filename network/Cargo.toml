@@ -1,0 +1,66 @@
+[package]
+name = "network"
+version = "0.1.0"
+license = "Apache-2.0"
+edition = "2021"
+
+[dependencies]
+anyhow ={ workspace = true }
+async-trait = { workspace = true }
+bytes = { workspace = true }
+futures ={ workspace = true }
+futures-util = { workspace = true }
+hex ={ workspace = true }
+once_cell  = { workspace = true }
+pin-project = { workspace = true }
+proptest-derive = { workspace = true }
+rand = { workspace = true }
+rand_core = { workspace = true }
+serde = { workspace = true }
+serde_bytes = { workspace = true }
+serde_json ={ workspace = true }
+thiserror ={ workspace = true }
+tokio ={ workspace = true }
+tokio-retry = { workspace = true }
+tokio-stream = { workspace = true }
+tokio-util = { workspace = true }
+
+bitvec = { workspace = true }
+channel = { workspace = true }
+bcs = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-crypto-derive = { workspace = true }
+mango-infallible = { workspace = true }
+mango-logger ={ workspace = true }
+mango-metrics = { workspace = true }
+mango-proptest-helpers = { workspace = true }
+mango-rate-limiter = { workspace = true }
+mango-time-service = { workspace = true }
+mango-types = { workspace = true }
+
+memsocket = { workspace = true }
+netcore = { workspace = true }
+num-variants = { workspace = true }
+short-hex-str ={ workspace = true }
+
+[dev-dependencies]
+criterion  = { workspace = true }
+
+mango-types = { workspace = true }
+maplit = { workspace = true }
+memsocket = { workspace = true }
+network-builder = { workspace = true }
+proptest-derive = { workspace = true }
+rand_core = { workspace = true }
+serial_test = { workspace = true }
+socket-bench-server = { workspace = true }
+
+
+[[bench]]
+name = "socket_bench"
+harness = false
+
+[[bench]]
+name = "network_bench"
+harness = false

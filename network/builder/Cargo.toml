@@ -1,0 +1,29 @@
+[package]
+name = "network-builder"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures ={ workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+tokio ={ workspace = true }
+
+channel = { workspace = true }
+bcs = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-infallible = { workspace = true }
+mango-logger ={ workspace = true }
+mango-metrics = { workspace = true }
+mango-network-address-encryption = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-time-service = { workspace = true }
+mango-types = { workspace = true }
+
+netcore = { workspace = true }
+network = { workspace = true }
+network-discovery = { workspace = true }
+subscription-service = { workspace = true }

@@ -1,0 +1,32 @@
+[package]
+name = "network-discovery"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+futures ={ workspace = true }
+once_cell  = { workspace = true }
+serde_yaml ={ workspace = true }
+tokio ={ workspace = true }
+
+channel = { workspace = true }
+bcs = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-logger ={ workspace = true }
+mango-metrics = { workspace = true }
+mango-time-service ={ workspace = true }
+mango-secure-storage = { workspace = true }
+mango-network-address-encryption = { workspace = true }
+mango-types = { workspace = true }
+
+move-core-types = { workspace = true }
+network = { workspace = true }
+short-hex-str = { workspace = true }
+subscription-service = { workspace = true }
+
+[dev-dependencies]
+mango-temppath ={ workspace = true }
+netcore = { workspace = true }
+rand = { workspace = true }

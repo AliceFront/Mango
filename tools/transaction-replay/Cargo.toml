@@ -1,0 +1,30 @@
+[package]
+name = "mango-transaction-replay"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+structopt ={ workspace = true }
+hex ={ workspace = true }
+
+mango-types = { workspace = true }
+mango-state-view = { workspace = true }
+mango-validator-interface = { workspace = true }
+diemdb = { workspace = true }
+mango-vm = { workspace = true }
+move-binary-format = { workspace = true }
+move-cli = { workspace = true }
+move-vm-types = { workspace = true }
+move-core-types = { workspace = true }
+move-vm-runtime = { workspace = true }
+move-vm-test-utils = { workspace = true }
+move-resource-viewer = { workspace = true }
+mango-framework = { workspace = true }
+move-compiler = { workspace = true }
+bcs = { workspace = true }
+difference = { workspace = true }
+
+[dev-dependencies]
+vm-genesis ={ workspace = true }
+mango-framework-releases = { workspace = true }

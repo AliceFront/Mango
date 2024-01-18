@@ -1,0 +1,11 @@
+[package]
+name = "generate-key"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rand = { workspace = true }
+bcs = { workspace = true }
+
+mango-crypto = { workspace = true }
+mango-temppath ={ workspace = true }

@@ -1,0 +1,19 @@
+[package]
+name = "db-bootstrapper"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+structopt ={ workspace = true }
+
+executor = { workspace = true }
+bcs = { workspace = true }
+diemdb = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+storage-interface = { workspace = true }

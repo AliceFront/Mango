@@ -1,0 +1,21 @@
+[package]
+name = "diemdb-benchmark"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+byteorder  = { workspace = true }
+indicatif = { workspace = true }
+itertools = { workspace = true }
+rand = { workspace = true }
+structopt ={ workspace = true }
+
+diemdb = { workspace = true }
+mango-crypto = { workspace = true }
+mango-jellyfish-merkle = { workspace = true }
+mango-config = { workspace = true }
+mango-types = { workspace = true }
+
+storage-interface = { workspace = true }
+

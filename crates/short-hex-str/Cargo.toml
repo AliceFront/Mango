@@ -1,0 +1,16 @@
+[package]
+name = "short-hex-str"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+mirai-annotations ={ workspace = true }
+serde = { workspace = true }
+static_assertions  = { workspace = true }
+thiserror ={ workspace = true }
+
+
+
+[dev-dependencies]
+hex ={ workspace = true }
+proptest  = { workspace = true }

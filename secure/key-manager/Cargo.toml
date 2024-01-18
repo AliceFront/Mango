@@ -1,0 +1,42 @@
+[package]
+name = "mango-key-manager"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+bcs = { workspace = true }
+once_cell  = { workspace = true }
+serde ={ workspace = true }
+thiserror ={ workspace = true }
+
+crash-handler = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-global-constants = { workspace = true }
+mango-logger ={ workspace = true }
+mango-client ={ workspace = true }
+mango-secure-push-metrics = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-time-service ={ workspace = true }
+mango-types = { workspace = true }
+
+mango-transaction-builder ={ workspace = true }
+
+[dev-dependencies]
+futures ={ workspace = true }
+rand = { workspace = true }
+tokio ={ workspace = true }
+
+executor = { workspace = true }
+executor-test-helpers = { workspace = true }
+executor-types = { workspace = true }
+mango-genesis-tool = { workspace = true }
+mango-json-rpc = { workspace = true }
+mango-secure-storage = { workspace = true }
+mango-time-service = { workspace = true }
+mango-vm = { workspace = true }
+diemdb = { workspace = true }
+storage-interface = { workspace = true }
+vm-validator = { path = "../../vm-validator" }
+

@@ -1,0 +1,18 @@
+[package]
+name = "executor-types"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+serde = { workspace = true }
+thiserror ={ workspace = true }
+
+bcs = { workspace = true }
+mango-crypto = { workspace = true }
+mango-secure-net = { workspace = true }
+mango-types = { workspace = true }
+
+mango-scratchpad = { workspace = true }
+storage-interface = { workspace = true }
+

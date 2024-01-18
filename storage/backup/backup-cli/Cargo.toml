@@ -1,0 +1,58 @@
+[package]
+name = "backup-cli"
+version = "0.1.0"
+
+
+license = "Apache-2.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+async-trait = { workspace = true }
+byteorder  = { workspace = true }
+bytes = { workspace = true }
+futures ={ workspace = true }
+hex ={ workspace = true }
+itertools ={ workspace = true }
+num_cpus = { workspace = true }
+once_cell  = { workspace = true }
+pin-project = { workspace = true }
+rand = { workspace = true }
+regex = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json ={ workspace = true }
+structopt ={ workspace = true }
+toml = { workspace = true }
+tokio ={ workspace = true }
+tokio-stream = { workspace = true }
+tokio-util ={ workspace = true }
+
+executor ={ workspace = true }
+executor-test-helpers = { workspace = true }
+executor-types = { workspace = true }
+mango-jellyfish-merkle = { workspace = true }
+bcs = { workspace = true }
+mango-config = { workspace = true }
+mango-crypto = { workspace = true }
+mango-infallible ={ workspace = true }
+mango-logger = { workspace = true }
+mango-secure-push-metrics = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-types = { workspace = true }
+mango-vm = { workspace = true }
+
+diemdb = { workspace = true }
+storage-interface = { workspace = true }
+
+[dev-dependencies]
+proptest  = { workspace = true }
+warp = { workspace = true }
+
+backup-service = { workspace = true }
+executor-test-helpers = { workspace = true }
+mango-config = { workspace = true }
+mango-proptest-helpers = { workspace = true }
+storage-interface = { workspace = true }
+

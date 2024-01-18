@@ -1,0 +1,21 @@
+[package]
+name = "storage-interface"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+itertools ={ workspace = true }
+serde = { workspace = true }
+thiserror ={ workspace = true }
+parking_lot = { workspace = true }
+
+bcs = { workspace = true }
+mango-crypto = { workspace = true }
+mango-secure-net = { workspace = true }
+mango-state-view = { workspace = true }
+mango-types = { workspace = true }
+
+mango-scratchpad = { workspace = true }
+move-core-types = { workspace = true }
+

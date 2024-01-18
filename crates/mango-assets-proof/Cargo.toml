@@ -1,0 +1,18 @@
+[package]
+name = "mango-assets-proof"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+serde = { workspace = true }
+serde_json ={ workspace = true }
+structopt ={ workspace = true }
+
+bcs = { workspace = true }
+mango-client = { workspace = true }
+mango-crypto = { workspace = true }
+mango-types = { workspace = true }
+move-core-types = { workspace = true }
+
+[dev-dependencies]

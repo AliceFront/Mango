@@ -1,0 +1,33 @@
+[package]
+name = "mango-scratchpad"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+arc-swap = { workspace = true }
+bitvec = { workspace = true }
+itertools ={ workspace = true }
+rayon = { workspace = true }
+
+mango-crypto = { workspace = true }
+mango-infallible = { workspace = true }
+mango-types = { workspace = true }
+
+
+[dev-dependencies]
+bitvec  = { workspace = true }
+criterion  = { workspace = true }
+rand = { workspace = true }
+
+storage-interface = { workspace = true }
+
+
+[[bench]]
+name = "sparse_merkle"
+harness = false
+required-features = ["bench"]
+
+[lib]
+# Allow Criterion benchmarks to take command line arguments
+# https://bheisler.github.io/criterion.rs/book/faq.html#cargo-bench-gives-unrecognized-option-errors-for-valid-command-line-options
+bench = false

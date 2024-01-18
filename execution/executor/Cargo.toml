@@ -1,0 +1,46 @@
+[package]
+name = "executor"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+fail = { workspace = true }
+itertools = { workspace = true }
+once_cell  = { workspace = true }
+serde_json ={ workspace = true }
+serde = { workspace = true }
+
+consensus-types = { workspace = true }
+executor-types = { workspace = true }
+bcs = { workspace = true }
+mango-crypto = { workspace = true }
+mango-logger ={ workspace = true }
+mango-metrics = { workspace = true }
+mango-infallible = { workspace = true }
+mango-secure-net = { workspace = true }
+mango-state-view = { workspace = true }
+mango-types = { workspace = true }
+move-core-types = { workspace = true }
+mango-vm = { workspace = true }
+
+mango-scratchpad = { workspace = true }
+storage-interface = { workspace = true }
+
+proptest  = { workspace = true }
+
+[dev-dependencies]
+proptest  = { workspace = true }
+rand = { workspace = true }
+
+mango-framework-releases = { workspace = true }
+move-compiler = { workspace = true }
+executor-test-helpers = { workspace = true }
+mango-config = { workspace = true }
+mango-genesis-tool = { workspace = true }
+mango-temppath ={ workspace = true }
+diemdb = { workspace = true }
+storage-interface = { workspace = true }
+mango-transaction-builder ={ workspace = true }
+vm-genesis = { workspace = true }
+

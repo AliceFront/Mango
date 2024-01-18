@@ -1,0 +1,17 @@
+[package]
+name = "jsonrpc-types-proto"
+version = "0.0.0"
+edition = "2018"
+
+[dependencies]
+prost = "0.8.0"
+serde = { workspace = true }
+serde_json ={ workspace = true }
+
+mango-crypto = { workspace = true }
+mango-types = { workspace = true }
+mango-json-rpc-types = { path = ".." }
+
+
+[build-dependencies]
+prost-build = "0.8.0"

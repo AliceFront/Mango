@@ -1,0 +1,12 @@
+[package]
+name = "mango-keygen"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rand = { workspace = true }
+sha3  = { workspace = true }
+hex ={ workspace = true }
+
+mango-crypto = { workspace = true }
+mango-types = { workspace = true }

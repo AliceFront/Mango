@@ -1,0 +1,15 @@
+[package]
+name = "channel"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+futures ={ workspace = true }
+mango-metrics = { workspace = true }
+mango-infallible = { workspace = true }
+
+
+[dev-dependencies]
+mango-types = { workspace = true }
+tokio ={ workspace = true }

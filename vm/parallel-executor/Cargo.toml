@@ -1,0 +1,24 @@
+[package]
+name = "mango-parallel-executor"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mvhashmap = { workspace = true }
+
+
+anyhow ={ workspace = true }
+criterion  = { workspace = true }
+crossbeam-queue = { workspace = true }
+rayon = { workspace = true }
+num_cpus = { workspace = true }
+once_cell  = { workspace = true }
+proptest  = { workspace = true }
+proptest-derive  = { workspace = true }
+rand = { workspace = true }
+
+[[bench]]
+name = "scheduler_benches"
+harness = false

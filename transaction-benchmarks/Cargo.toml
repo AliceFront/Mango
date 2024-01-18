@@ -1,0 +1,15 @@
+[package]
+name = "mango-transaction-benchmarks"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+criterion  = { workspace = true }
+proptest  = { workspace = true }
+criterion-cpu-time = { workspace = true }
+mango-types ={ workspace = true }
+
+
+[[bench]]
+name = "transaction_benches"
+harness = false

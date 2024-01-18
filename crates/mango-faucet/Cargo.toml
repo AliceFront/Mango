@@ -1,0 +1,29 @@
+[package]
+name = "mango-faucet"
+version = "0.1.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+anyhow ={ workspace = true }
+bcs = { workspace = true }
+hex ={ workspace = true }
+rand = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+structopt ={ workspace = true }
+tokio ={ workspace = true }
+warp = { workspace = true }
+
+generate-key = { workspace = true }
+mango-logger ={ workspace = true }
+mango-sdk  = { workspace = true }
+
+
+
+[dev-dependencies]
+serde_json ={ workspace = true }
+tempfile = { workspace = true }
+
+mango-config = { workspace = true }
+mango-infallible = { workspace = true }

@@ -1,0 +1,35 @@
+[package]
+name = "event-notifications"
+version = "0.1.0"
+
+description = "The notification service offered by state sync for on-chain events"
+
+license = "Apache-2.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+async-trait = { workspace = true }
+futures ={ workspace = true }
+itertools = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+
+channel = { workspace = true }
+mango-infallible ={ workspace = true }
+mango-types = { workspace = true }
+
+storage-interface ={ workspace = true }
+
+
+[dev-dependencies]
+bcs = { workspace = true }
+
+mango-crypto = { workspace = true }
+mango-temppath ={ workspace = true }
+mango-vm = { workspace = true }
+diemdb ={ workspace = true }
+executor-test-helpers = { workspace = true }
+move-core-types = { workspace = true }
+vm-genesis = { workspace = true }

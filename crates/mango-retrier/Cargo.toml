@@ -1,0 +1,9 @@
+[package]
+name = "mango-retrier"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+
+tokio = { workspace = true }
+mango-logger = { workspace = true }
